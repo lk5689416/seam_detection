@@ -32,26 +32,5 @@ add_definitions( ${PCL_DEFINITIONS} )
 
 find_package(OpenCV REQUIRED)
 
-add_executable(1 src/1.cpp)
-target_link_libraries(1 ${catkin_LIBRARIES} ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_LIBRARIES})
-
-add_executable(2 src/2.cpp)
-target_link_libraries(2 ${catkin_LIBRARIES} ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_LIBRARIES})
-
-add_executable(3 src/3.cpp)
-target_link_libraries(3 ${catkin_LIBRARIES} ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_LIBRARIES})
-
-add_executable(4 src/4.cpp)
-target_link_libraries(4 ${catkin_LIBRARIES} ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_LIBRARIES})
-
-add_executable(5 src/5.cpp)
-target_link_libraries(5 ${catkin_LIBRARIES} ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_LIBRARIES})
-
-add_executable(6 src/6.cpp)
-target_link_libraries(6 ${catkin_LIBRARIES} ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_LIBRARIES})
-
-add_executable(7 src/7.cpp)
-target_link_libraries(7 ${catkin_LIBRARIES} ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBS})
-
-add_executable(7_long src/7_long.cpp)
-target_link_libraries(7_long ${catkin_LIBRARIES} ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBS})
+add_executable(pcl_seam src/pcl_seam.cpp)
+target_link_libraries(pcl_seam ${catkin_LIBRARIES} ${PCL_COMMON_LIBRARIES} ${PCL_IO_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBS})
